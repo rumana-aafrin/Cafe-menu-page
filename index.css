@@ -1,0 +1,151 @@
+/*Body content styling*/
+body{
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: Helvetica;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+/*Styling for whole body content except footer*/
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+  padding: 0;
+}
+
+
+/*Styling for navigation bar*/
+.nav-div{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  text-decoration: none;
+  list-style-type: none;
+  background-color:peru;
+  font-weight:bold;
+  padding:20px 10%;
+  margin-top:0;
+}
+.nav-div a {
+  text-decoration: none;
+  color:black;
+}
+.nav-div img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+/*Styling for menu card content */
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%; 
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  max-width: 40em;
+  margin-top: 3%;        
+  margin-bottom: 3%; 
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-10px;
+}
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  line-height:0;
+}
+
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #D8985A;
+  line-height: 2;
+  color: black;
+  }
+
+.footer-content{
+  flex-basis: 22%;
+  text-align: center;
+  height: 15em;
+}
+
+.footer-content h3 {
+  font-weight: bold;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content a:hover {
+  color: yellow;
+}
+
+.map-text {
+  font-size: 8px;
+  padding-top: 10px;
+}
+
+/* To make page responsive(mobile view) through media querry*/
+@media only screen and (max-width: 38em) {
+.footer {
+  flex-direction: column;
+  text-align: center;
+  line-height: 1;
+  }
+  
+.footer-content a:hover{
+  color:yellow; 
+}
+}
+	
